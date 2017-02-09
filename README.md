@@ -1,3 +1,8 @@
+<div style="text-align:center">
+	<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+</div>
+
+
 ## Preamble
 
 This is a compilation of notes that I accumulated while studying [_**Lectures in Logic and Set Theory. Volume I: Mathematical Logic**_](https://www.amazon.com/Lectures-Logic-Set-Theory-Mathematical/dp/0521753732). The core material of this GitBook is the same as that in the latter. However, there are additional proofs, more details in existing proofs and bug fixes.
