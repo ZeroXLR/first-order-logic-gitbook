@@ -1,7 +1,3 @@
-# Notes on First Order Logic
----
-
-
 ## Preamble
 
 This is a compilation of notes that I accumulated while studying [_**Lectures in Logic and Set Theory. Volume I: Mathematical Logic**_](https://www.amazon.com/Lectures-Logic-Set-Theory-Mathematical/dp/0521753732). The core material of this GitBook is the same as that in the latter. However, there are additional proofs, more details in existing proofs and bug fixes.
@@ -24,4 +20,4 @@ Instead, the study of formal logical systems is analogous to the study of any ot
 
 The informal mathematical results, required to do the study itself, are simply taken for granted. One cannot prove these without circular reasoning. They form, what we call the **external theory** or the **metatheory**. On the other hand, the system being constructed and studied is called the **internal theory**.
 
-This distinction is crucial because when I say statements like, "we have proved the well-ordering property of the naturals", what I really mean is, "the formal theory we are studying can derive the well-ordering property of the naturals inside its own self". Of course, there is no point in proving the aforementioned result in the metatheory as it already takes the property for granted.
+This distinction is crucial because when I say statements like, "we have proved the well-ordering property of the naturals", what I really mean is, "the formal theory we are studying can derive the well-ordering property of the naturals inside its own self". Of course, there is no point in proving the aforementioned result in the metatheory as it already takes that for granted.
