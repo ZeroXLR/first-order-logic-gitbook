@@ -1,5 +1,5 @@
 <div style="text-align:center">
-	<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+	<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 </div>
 
 
@@ -15,7 +15,7 @@ The formal study of logic has humbler aims than what a foundationalist might ass
 1. It would be philosophically circular to do so. For, to construct and analyze formal logic, as this book does, one ends up needing informal math such as
 	* **informal set theory**: ideas on forming unions, intersections, differences, power sets, products, etc; ideas on cardinality (for finite sets in the beginning and for countable and even uncountable sets later on)
 	* **basic ideas about relations and functions**
-	* **properties of natural numbers** $$\{0, 1, 2, 3, ...\}$$: well-ordering property, inductive properties, etc.
+	* **ideas on the natural numbers** $$\{0, 1, 2, 3, ...\}$$: well-ordering property, inductive properties, etc
 	* **notions about finite strings of letters**
 2. One can show mathematically that it any one particular system of logic cannot found all of mathematics **lest it be inconsistent**. This is the content of Gödel's Incompleteness Theorems. In short, such a system
 	* either is not complicated enough to encode the natural numbers, in which case, the system does not provide a foundation for the naturals
