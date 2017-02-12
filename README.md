@@ -17,7 +17,7 @@ The formal study of logic, in the modern era, has humbler aims than what an ambi
 1. It would be philosophically circular to do so. For, to construct and analyze formal logic, as this book does, one ends up needing a lot of informal math such as
 	* **informal set theory**: ideas on forming unions, intersections, differences, power sets, products, etc; ideas on cardinality (for finite sets in the beginning and for countable and even uncountable sets later on)
 	* **basic ideas about relations and functions**
-	* **the natural numbers $$\{0, 1, 2, ...\}$$ and associated ideas**: well-ordering property, induction, successor function, addition, subtraction, multiplication, division, divisibility, etc
+	* **the natural numbers and associated ideas**: well-ordering property, induction, successor function, addition, subtraction, multiplication, division, divisibility, etc
 	* **notions about finite strings of letters**
 	* **inductive definitions and proofs**
 2. One can show mathematically that any one particular system of logic cannot found all of mathematics **lest it be inconsistent**. This is the content of Gödel's Incompleteness Theorems. In short, such a system, if it is consistent,
