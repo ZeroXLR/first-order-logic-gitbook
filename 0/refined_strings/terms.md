@@ -6,8 +6,8 @@ Before defining the set of formulas, one must first define one of its key consti
 ## Definition
 
 $$\mathbf{Terms}$$ is the _smallest subset_ of $$\mathbf{AB}^\star$$ satisfying the following:
-1. Every **variable** symbol and every **constant** symbol are in $$\mathbf{Terms}$$.
-2. If $$^nf_i$$ is a **function** symbol (of arity $$n$$) and $$t_1,...,t_n$$ are any $$n$$ strings already in $$\mathbf{Terms}$$, then the string $$^nf_i(t_1,...,t_n)$$ is in $$\mathbf{Terms}$$.
+1. Every variable symbol and every constant symbol are in $$\mathbf{Terms}$$.
+2. If $$^nf_i$$ is a function symbol (of arity $$n$$) and $$t_1,...,t_n$$ are any $$n$$ strings already in $$\mathbf{Terms}$$, then the string $$^nf_i(t_1,...,t_n)$$ is in $$\mathbf{Terms}$$.
 
 ## Notes
 
