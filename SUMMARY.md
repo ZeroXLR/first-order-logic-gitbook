@@ -10,4 +10,5 @@
 		* [Terms](0/refined_strings/terms.md)
 		* [Formulas](0/refined_strings/formulas.md)
 	* [Metatheory on Induction](0/induction_metatheory/README.md)
+		* [Basic Definitions](0/induction_metatheory/basics.md)
 * [Basic Semantics](1/README.md)

@@ -3,9 +3,9 @@ Like natural, written languages, first order logic begins with an alphabet. Unli
 ---
 
 
-## Logical Symbols
+## Definition LS:
 
-The first group of symbols, comprising the alphabet, is the set of **logical symbols**; this set is common to all "flavors" of first order logic. It is, in turn, comprised of the following:
+**Logical Symbols**. The first group of symbols, comprising the alphabet, is the set of _logical symbols_; this set is common to all "flavors" of first order logic. It is, in turn, comprised of the following:
 
 * **Variables**: $$v_0, v_1, v_2, ...$$
 	* In essence, I am setting aside a countably infinite number of symbols of the form $$v_i$$ for each natural number $$i$$.
@@ -19,9 +19,9 @@ The first group of symbols, comprising the alphabet, is the set of **logical sym
 The last symbol may be a source of confusion because one needs an equality symbol in the metatheory too. Otherwise, how does one express the fact that two sets are equal in the metatheory? Of course, one can laboriously write down the English statement, "set A is equal to set B" each time, but, for convenience's sake, a shortcut symbol is needed. This is henceforth defined to be $$\equiv$$.
 
 
-## Nonlogical Symbols
+## Definition NLS:
 
-The contents of the second group of symbols depend on the particular "flavor" of first order logic being studied. They always appear in at most three forms: **constants**, **function symbols** and **predicate symbols**:
+**Nonlogical Symbols**. The contents of the second group of symbols depend on the particular "flavor" of first order logic being studied. They always appear in at most three forms: **constants**, **function symbols** and **predicate symbols**:
 
 * **Constants**: Since the particular make-up of this group depends on the particular theory being studied, one cannot obviously list the actual symbols comprising this set. Instead, one has to make do with a countable list of stand-in reference symbols &mdash; $$c_0, c_1, c_2, ...$$.
 	* While one cannot demonstrate actual symbols in the general case, one can at least demonstrate actual symbols in a particular case. Thus, for instance, $$0$$ is a constant symbol in the first order theory of natural numbers.

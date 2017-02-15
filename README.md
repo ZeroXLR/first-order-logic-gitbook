@@ -1,5 +1,5 @@
 <div style="text-align:center">
-	<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+	<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 </div>
 
 ---
@@ -24,7 +24,7 @@ The formal study of logic, in the modern era, has humbler aims than what an ambi
 	* either is not complicated enough to encode the natural numbers, in which case, the system does not provide a foundation for the naturals
 	* or (in the case that it is complicated enough) contains a statement that is true but unprovable (i.e. unprovable in the system itself; it may be provable in a different system)
 
-Instead, the study of formal logical systems is analogous to the study of any other mathematical system: it strives to discover properties of the system that cannot be surmised without an in-depth look.
+Instead, the study of formal logical systems is analogous to the study of any other mathematical system: it strives to discover properties of the system that cannot be surmised with a merely cursory look.
 
 The informal mathematical results, required to do the study itself, are simply taken for granted. One cannot prove these without circular reasoning. They form, what is called the **external theory** or the **metatheory**. On the other hand, the system being constructed and studied is called the **internal theory**.
 

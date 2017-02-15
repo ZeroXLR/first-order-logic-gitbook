@@ -3,24 +3,24 @@ I will now define the set of formulas by induction. As large formulas can get a 
 ---
 
 
-## Definition (Atomic Formulas)
+## Definition AF:
 
-$$\mathbf{AF}$$ is the smallest subset of $$\mathbf{AB}^\star$$ such that
+**Atomic Formulas**. $$\mathbf{AF}$$ is the smallest subset of $$\mathbf{AB}^\star$$ such that
 1. For every pair of terms $$t,t'$$, the string $$=(t,t')$$ is in $$\mathbf{AF}$$. $$=(t,t')$$ is colloquially written as $$(t=t')$$ or even as $$t=t'$$.
 2. For any $$n$$-ary predicate symbol $$^nP_i$$ and any $$n$$ terms $$t_1,...,t_n$$, the string $$^nP_i(t_1,...,t_n)$$ is in $$\mathbf{AF}$$.
 
 
-## Definition (Well-Formed Formulas)
+## Definition WFF:
 
-$$\mathbf{WFF}$$ is the smallest subset of $$\mathbf{AB}^\star$$ such that
+**Well-Formed Formulas**. $$\mathbf{WFF}$$ is the smallest subset of $$\mathbf{AB}^\star$$ such that
 1. $$\mathbf{AF} \subseteq \mathbf{WFF}$$
 2. If the strings $$\mathscr{A},\mathscr{B}$$ are already in $$\mathbf{WFF}$$, then the strings $$(\neg\mathscr{A})$$ and $$(\mathscr{A}|\mathscr{B})$$ are in there too.
 3. If the string $$\mathscr{A}$$ is included and $$x$$ is any variable, then the string $$((\exists x)\mathscr{A})$$ is also included. In this case, one says that $$\mathscr{A}$$ is the **scope** of $$(\exists x)$$.
 
 
-## Convenient Abbreviations
+## Definition CA:
 
-For the sake of convenience in writing down large formulas and reasoning about them, one defines (in the metatheory) some shorthand notations and conventions:
+**Convenient Abbreviations**. For the sake of convenience in writing down large formulas and reasoning about them, one defines (in the metatheory) some shorthand notations and conventions:
 
 * $$((\forall x)\mathscr{A})$$ abbreviates $$(\neg((\exists x)(\neg\mathscr{A})))$$.
 * $$(\mathscr{A} \& \mathscr{B})$$ abbreviates $$(\neg((\neg\mathscr{A})|(\neg\mathscr{B}))$$.

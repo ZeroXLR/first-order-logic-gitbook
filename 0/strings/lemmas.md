@@ -3,16 +3,16 @@ I now prove some basic properties of strings and their associated concepts. Sinc
 ---
 
 
-## String Cancellation
+## Metatheorem SC:
 
-_If $$\sigma, \sigma', \sigma'' \in \mathbf{AB}^\star$$ are such that $$\sigma\sigma' \equiv \sigma\sigma''$$, then $$\sigma' \equiv \sigma''$$._
+**String Cancellation**. _If $$\sigma, \sigma', \sigma'' \in \mathbf{AB}^\star$$ are such that $$\sigma\sigma' \equiv \sigma\sigma''$$, then $$\sigma' \equiv \sigma''$$._
 
 **Proof**:
-1. If the hypothesis is true, then, by definition of concatenation, $$|\sigma\sigma'| \equiv |\sigma\sigma''|$$ i.e. $$|\sigma| + |\sigma'| \equiv |\sigma| + |\sigma''|$$. So, $$|\sigma'| \equiv |\sigma''|$$.
+1. If the hypothesis is true, then, by [Definition StrCon](concepts.md#definition-strcon), $$|\sigma\sigma'| \equiv |\sigma\sigma''|$$ i.e. $$|\sigma| + |\sigma'| \equiv |\sigma| + |\sigma''|$$. So, $$|\sigma'| \equiv |\sigma''|$$.
 
-2. Also, by definition of string equality, $$(\sigma\sigma')_i \equiv (\sigma\sigma'')_i$$ for all $$i$$ among $$1,...,|\sigma\sigma'|$$ (or $$1,...,|\sigma\sigma''|$$ because of 1).
+2. Also, by [Definition StrEq](concepts.md#definition-streq), $$(\sigma\sigma')_i \equiv (\sigma\sigma'')_i$$ for all $$i$$ among $$1,...,|\sigma\sigma'|$$ (or $$1,...,|\sigma\sigma''|$$ because of 1).
 
-3. At the same time, again by the definition of concatenation, $$(\sigma\sigma')_{i+|\sigma'|} \equiv \sigma_i'$$ for $$i$$ among $$1,...,|\sigma'|$$. Similarly, $$(\sigma\sigma'')_{i+|\sigma''|} \equiv \sigma_i''$$ for $$i$$ among $$1,...,|\sigma''|$$.
+3. At the same time, again by [Definition StrCon](concepts.md#definition-strcon), $$(\sigma\sigma')_{i+|\sigma'|} \equiv \sigma_i'$$ for $$i$$ among $$1,...,|\sigma'|$$. Similarly, $$(\sigma\sigma'')_{i+|\sigma''|} \equiv \sigma_i''$$ for $$i$$ among $$1,...,|\sigma''|$$.
 
 Putting the results in 1, 2 and 3 together, one gets that
 $$
@@ -26,11 +26,11 @@ _If $$\sigma, \sigma', \sigma'', \sigma''' \in \mathbf{AB}^\star$$ are such that
 One final note: the two lemmas above cancel from the front i.e. they are prefix-cancellers. There is no reason why one couldn't equally cancel from the back and, in fact, proving the analogous suffix-versions of the lemmas is no harder.
 
 
-## Associativity of String Concatenation
+## Metatheorem ASC:
 
-_If $$\sigma, \sigma', \sigma''$$ are strings, then $$(\sigma\sigma')\sigma'' \equiv \sigma(\sigma'\sigma'')$$._
+**Associativity of String Concatenation**. _If $$\sigma, \sigma', \sigma''$$ are strings, then $$(\sigma\sigma')\sigma'' \equiv \sigma(\sigma'\sigma'')$$._
 
-**Proof Sketch**: Firstly, the definition of concatenation yields that
+**Proof Sketch**: Firstly, [Definition StrCon](concepts.md#definition-strcon) yields that
 $$
 \begin{aligned}
 |(\sigma\sigma')\sigma''| &\equiv |\sigma\sigma'| + |\sigma''| \\ &\equiv (|\sigma| + |\sigma'|) + |\sigma''| \\ &\equiv |\sigma| + (|\sigma'| + |\sigma''|) \\ &\equiv |\sigma| + |\sigma'\sigma''| \equiv |\sigma(\sigma'\sigma'')|
@@ -50,9 +50,9 @@ I will not show the remaining parts of the proof but the gist should be clear: o
 Because of the associativity of string concatenation, one can use the single notation &mdash; $$\sigma\sigma'\sigma''$$ &mdash; to refer to both $$(\sigma\sigma')\sigma''$$ and $$\sigma(\sigma'\sigma'')$$.
 
 
-## Levi's Lemma
+## Metatheorem LL:
 
-_Given strings $$\sigma_\text{left}, \sigma_\text{right}, \sigma_\text{left}', \sigma_\text{right}'$$, if $$\sigma_\text{left}\sigma_\text{right} \equiv \sigma_\text{left}'\sigma_\text{right}'$$, then there exists a string $$\sigma_\text{mid}$$ such that:_
+**Levi's Lemma**. _Given strings $$\sigma_\text{left}, \sigma_\text{right}, \sigma_\text{left}', \sigma_\text{right}'$$, if $$\sigma_\text{left}\sigma_\text{right} \equiv \sigma_\text{left}'\sigma_\text{right}'$$, then there exists a string $$\sigma_\text{mid}$$ such that:_
 1. _either $$\sigma_\text{left}\sigma_\text{mid} \equiv \sigma_\text{left}'$$ and $$\sigma_\text{right} \equiv \sigma_\text{mid}\sigma_\text{right}'$$_
 2. _or $$\sigma_\text{left}'\sigma_\text{mid} \equiv \sigma_\text{left}$$ and $$\sigma_\text{right}' \equiv \sigma_\text{mid}\sigma_\text{right}$$_
 3. _or $$\sigma_\text{left} \equiv \sigma_\text{left}'$$ and $$\sigma_\text{right} \equiv \sigma_\text{right}'$$_
