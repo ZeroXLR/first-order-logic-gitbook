@@ -16,12 +16,12 @@ To express the fact that $$a_1,...,a_n,a_{n+1}$$ is a row in the table, one uses
 Occasionally, one also uses the notation $$R(a_1,...,a_n) \sim a_{n+1}$$ and, in that case, one says that $$R$$ yields an output of $$a_{n+1}$$ on input(s) $$a_1,...,a_n$$. However, one must be careful since $$R$$ is a relation and not a function. It may have multiple outputs for the same input.
 
 
-## Definition Closure:
+## Definition Closure
 
 **Closure**. A set $$S$$ is said to **closed** under an $$(n+1)$$-ary rule $$R$$ iff whenever $$a_1,...,a_n$$ are all in $$S$$, then every $$a_{n+1}$$ satisfying $$R(a_1,...,a_n,a_{n+1})$$ is in $$S$$.
 
 
-## Definition IDS:
+## Definition IDS
 
 **Inductively Defined Set**. A set $$S$$ is defined by induction from a set of initial objects $$\mathscr{I}$$ and a set of rules $$\mathscr{R}$$ iff it is the smallest set such that:
 1. $$\mathscr{I} \subseteq S$$
@@ -30,7 +30,7 @@ Occasionally, one also uses the notation $$R(a_1,...,a_n) \sim a_{n+1}$$ and, in
 One takes it for granted that a set $$S$$, defined as above, always exists in the metatheory. $$S$$ is called the **closure of $$\mathscr{I}$$ under $$\mathscr{R}$$**. As smallest sets are unique, one writes $$S$$ uniquely as $$\text{cl}(\mathscr{I},\mathscr{R})$$.
 
 
-## Metatheorem PI:
+## Metatheorem PI
 
 **Proof by Induction**. _If for some set $$T$$, the following are true:_
 * _$$\mathscr{I} \subseteq T$$_

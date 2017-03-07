@@ -7,7 +7,7 @@ Using the metatheory mentioned [earlier](../README.md#preface), I will construct
 > Like natural, written languages, first order logic begins with an alphabet. Unlike natural, written languages, however, the alphabet of first order logic is not finite, as one sees below:
 
 
-## Definition LS:
+## Definition LS
 
 **Logical Symbols**. The first group of symbols, comprising the alphabet, is the set of _logical symbols_; this set is common to all "flavors" of first order logic. It is, in turn, comprised of the following:
 
@@ -23,7 +23,7 @@ Using the metatheory mentioned [earlier](../README.md#preface), I will construct
 The last symbol may be a source of confusion because one needs an equality symbol in the metatheory too. Otherwise, how does one express the fact that two sets are equal in the metatheory? Of course, one can laboriously write down the English statement, "set A is equal to set B" each time, but, for convenience's sake, a shortcut symbol is needed. This is henceforth defined to be $$\equiv$$.
 
 
-## Definition NLS:
+## Definition NLS
 
 **Nonlogical Symbols**. The contents of the second group of symbols depend on the particular "flavor" of first order logic being studied. They always appear in at most three forms: **constants**, **function symbols** and **predicate symbols**:
 
@@ -36,7 +36,7 @@ The last symbol may be a source of confusion because one needs an equality symbo
 	* Technically, the equality predicate, defined as a logical symbol, is a predicate symbol of arity $$2$$. Thus, a more accurate title for this section would be "Predicate Symbols without Equality".
 
 
-## Remarks:
+## Remarks
 
 There is an obvious but important metatheoretical property of each symbol defined above (actual or referential): each symbol is distinct from every other symbol. Thus, neither is any symbol _equal_ to any other (save itself) nor does any symbol _refer_ to any other. This **distinctness property** is used in proving _unique readability theorems_ later on.
 

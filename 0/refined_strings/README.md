@@ -11,7 +11,7 @@ In the next two chapters, I will progressively use this method to construct the 
 > Before defining the set of formulas, one must first define one of its key constituents &mdash; the set of **terms**. Doing so requires an inductive definition as follows:
 
 
-## Definition Terms:
+## Definition Terms
 
 **Terms**. $$\mathbf{Terms}$$ is the _smallest subset_ of $$\mathbf{AB}^\star$$ satisfying the following:
 1. Every variable symbol and every constant symbol are in $$\mathbf{Terms}$$.
@@ -31,14 +31,14 @@ In the next two chapters, I will progressively use this method to construct the 
 > I will now define the set of formulas by induction. As large formulas can get a bit unwieldy to write down, I also define some metatheoretical conventions that helps to alleviate some of this unwieldiness.
 
 
-## Definition AF:
+## Definition AF
 
 **Atomic Formulas**. $$\mathbf{AF}$$ is the smallest subset of $$\mathbf{AB}^\star$$ such that
 1. For every pair of terms $$t,t'$$, the string $$=(t,t')$$ is in $$\mathbf{AF}$$. $$=(t,t')$$ is colloquially written as $$(t=t')$$ or even as $$t=t'$$.
 2. For any $$n$$-ary predicate symbol $$^nP_i$$ and any $$n$$ terms $$t_1,...,t_n$$, the string $$^nP_i(t_1,...,t_n)$$ is in $$\mathbf{AF}$$.
 
 
-## Definition WFF:
+## Definition WFF
 
 **Well-Formed Formulas**. $$\mathbf{WFF}$$ is the smallest subset of $$\mathbf{AB}^\star$$ such that
 1. $$\mathbf{AF} \subseteq \mathbf{WFF}$$
@@ -46,7 +46,7 @@ In the next two chapters, I will progressively use this method to construct the 
 3. If the string $$\mathscr{A}$$ is included and $$x$$ is any variable, then the string $$((\exists x)\mathscr{A})$$ is also included. In this case, one says that $$\mathscr{A}$$ is the **scope** of $$(\exists x)$$.
 
 
-## Definition CA:
+## Definition CA
 
 **Convenient Abbreviations**. For the sake of convenience in writing down large formulas and reasoning about them, one defines (in the metatheory) some shorthand notations and conventions:
 
