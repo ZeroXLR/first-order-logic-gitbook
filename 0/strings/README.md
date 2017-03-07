@@ -49,7 +49,7 @@ Now, I highlight an important property of alphabet symbols: no _nonempty_ string
 
 One can go further and actually count the number of times a particular symbol occurs in a string. Firstly, for any two symbols $$\varsigma, \varsigma'$$, define
 $$
-\text{Count}_\varsigma(\varsigma) \equiv \begin{cases} 1 &\text{if } \varsigma \equiv \varsigma' \\ 0 &\text{otherwise} \end{cases}
+\text{Count}_\varsigma(\varsigma') \equiv \begin{cases} 1 &\text{if } \varsigma \equiv \varsigma' \\ 0 &\text{otherwise} \end{cases}
 $$
 Now, extend $$\text{Count}$$ to take in any string $$\sigma$$ as input:
 $$
