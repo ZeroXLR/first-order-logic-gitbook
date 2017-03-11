@@ -51,12 +51,11 @@ In the next two chapters, I will progressively use this method to construct the 
 **Convenient Abbreviations**. For the sake of convenience in writing down large formulas and reasoning about them, one defines (in the metatheory) some shorthand notations and conventions:
 
 * $$((\forall x)\mathscr{A})$$ abbreviates $$(\neg((\exists x)(\neg\mathscr{A})))$$.
-* $$(\mathscr{A} \& \mathscr{B})$$ abbreviates $$(\neg((\neg\mathscr{A})|(\neg\mathscr{B}))$$.
+* $$(\mathscr{A} \& \mathscr{B})$$ abbreviates $$(\neg((\neg\mathscr{A})|(\neg\mathscr{B})))$$.
 * $$(\mathscr{A}\to\mathscr{B})$$ abbreviates $$((\neg\mathscr{A})|\mathscr{B})$$.
 * $$(\mathscr{A}\leftrightarrow\mathscr{B})$$ abbreviates $$((\mathscr{A}\to\mathscr{B})\&(\mathscr{B}\to\mathscr{A}))$$.
 * To minimize the use of brackets in the metatheory, one adopts certain priorities in parsing connectives: $$\forall,\exists,\neg$$ have the highest parse-priority; then, one has the following list of connectives in decreasing order of priority:
-	* $$\&$$
-	* $$|$$
-	* $$\to$$
-	* $$\leftrightarrow$$
+$$
+\& \quad | \quad \to \quad \leftrightarrow
+$$
 * Also, within a formula that has a sequence of the same connective, one agrees to eliminate outermost brackets using the convention that similar connectives associate to the right. So for example, $$\mathscr{A}\to\mathscr{B}\to\mathscr{C}$$ is just sloppy notation for the formula $$(\mathscr{A}\to(\mathscr{B}\to\mathscr{C}))$$.

@@ -19,12 +19,12 @@ Now, define the set of **strings over** $$\mathbf{AB}$$, denoted as $$\mathbf{AB
 
 **Concatenation**. The concatenation of two strings $$\sigma, \sigma'$$ is a string made by writing down every symbol of $$\sigma$$ followed by writing down every symbol of $$\sigma'$$.
 
-As usual, one can get a more technical. The concatenation of strings $$\sigma, \sigma'$$ is the string, denoted by $$\sigma\sigma'$$, of length $$|\sigma|+|\sigma'|$$ such that:
+As usual, one can get a more technical &mdash; the concatenation of strings $$\sigma, \sigma'$$ is the unique string of length $$|\sigma|+|\sigma'|$$ such that:
 
 * $$(\sigma\sigma')_i \equiv \sigma_i$$ for $$i$$ among the numbers in the range $$1, ... , |\sigma|$$
 * $$(\sigma\sigma')_{i+|\sigma|} \equiv \sigma_i'$$ for $$i$$ among the numbers in the range $$1 , ... , |\sigma'|$$
 
-Visually, $$\sigma\sigma' \equiv \sigma_1...\sigma_{|\sigma|}\sigma_1'...\sigma_{|\sigma'|}'$$.
+It is denoted as $$\sigma\sigma'$$. Visually, $$\sigma\sigma' \equiv \sigma_1...\sigma_{|\sigma|}\sigma_1'...\sigma_{|\sigma'|}'$$.
 
 Now, from this definition of concatenation, it is evident that the empty string behaves in the following way:
 $$
@@ -40,7 +40,7 @@ For this behavior, the empty string is said to be the **identity of concatenatio
 $$
 If at least one of $$\sigma_\text{left}, \sigma_\text{right}$$ is not the empty string, then one says that $$\sigma$$ is a **proper substring** of $$\sigma'$$. If $$\sigma_\text{left} \equiv \epsilon$$, one calls $$\sigma$$ a **prefix** of $$\sigma'$$. Analogously, if $$\sigma_\text{right} \equiv \epsilon$$, one calls the former a **suffix** of the latter.
 
-Now, I highlight an important property of alphabet symbols: no _nonempty_ string is a _proper substring_ of any symbol $$\varsigma$$ in $$\mathbf{AB}$$ (here, $$\varsigma$$ must be thought of as the unique string $$\sigma$$ of length $$1$$ where $$\sigma_1 \equiv \varsigma$$). This is the **atomicity property** of alphabet symbols. Like the distinctness property, it will be used in proving unique readability theorems. One can easily prove it via contradiction (unlike the distinctness property, which is assumed outright, atomicity can be proven with the definitions given thus far).
+I now highlight an important property &mdash; the **atomicity property** &mdash; of alphabet symbols: any _proper substring_ of a symbol $$\varsigma$$ in $$\mathbf{AB}$$ is _empty_. Like the distinctness property, it will be used in proving unique readability theorems. One can easily prove it via contradiction &mdash; unlike the distinctness property, which is assumed outright, atomicity can be proven with the definitions given thus far. Note that even though I qualified $$\varsigma$$ as a symbol, in reality, it should be thought of as the unique string $$\sigma$$ such that $$|\sigma| \equiv 1$$ and $$\sigma_1 \equiv \varsigma$$.
 
 
 ## Definition StrSOC
@@ -49,7 +49,7 @@ Now, I highlight an important property of alphabet symbols: no _nonempty_ string
 
 One can go further and actually count the number of times a particular symbol occurs in a string. Firstly, for any two symbols $$\varsigma, \varsigma'$$, define
 $$
-\text{Count}_\varsigma(\varsigma') \equiv \begin{cases} 1 &\text{if } \varsigma \equiv \varsigma' \\ 0 &\text{otherwise} \end{cases}
+\text{Count}_\varsigma(\varsigma') \equiv \begin{cases} 1 &\text{if } \varsigma' \equiv \varsigma \\ 0 &\text{otherwise} \end{cases}
 $$
 Now, extend $$\text{Count}$$ to take in any string $$\sigma$$ as input:
 $$
@@ -69,7 +69,7 @@ One should verify with some examples and mini-proofs that this occurrence counti
 **Proof**:
 1. If the hypothesis is true, then, by [Definition StrCon](#definition-strcon), $$|\sigma\sigma'| \equiv |\sigma\sigma''|$$ i.e. $$|\sigma| + |\sigma'| \equiv |\sigma| + |\sigma''|$$. So, $$|\sigma'| \equiv |\sigma''|$$.
 
-2. Also, by [Definition StrEq](#definition-streq), $$(\sigma\sigma')_i \equiv (\sigma\sigma'')_i$$ for all $$i$$ among $$1,...,|\sigma\sigma'|$$ (or $$1,...,|\sigma\sigma''|$$ because of 1).
+2. Also, by [Definition StrEq](#definition-streq), $$(\sigma\sigma')_i \equiv (\sigma\sigma'')_i$$ for all $$i$$ among $$1,...,|\sigma\sigma'|$$ (or $$1,...,|\sigma\sigma''|$$).
 
 3. At the same time, again by [Definition StrCon](#definition-strcon), $$(\sigma\sigma')_{i+|\sigma'|} \equiv \sigma_i'$$ for $$i$$ among $$1,...,|\sigma'|$$. Similarly, $$(\sigma\sigma'')_{i+|\sigma''|} \equiv \sigma_i''$$ for $$i$$ among $$1,...,|\sigma''|$$.
 
