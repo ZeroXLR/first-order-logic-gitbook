@@ -24,7 +24,8 @@
 	<!-- * [Well-Formed Formulas](0/refined_strings/README.md#definition-wff) -->
 	<!-- * [Abbreviations](0/refined_strings/README.md#definition-ca) -->
 * [Induction](0/induction_metatheory/README.md)
-	* [Alternatives](0/induction_metatheory/alternatives.md)
+	* [Alternative Views](0/induction_metatheory/alternatives.md)
+	* [Unique Readability](0/induction_metatheory/unique_readability.md)
 	<!-- * [Manifesto](0/induction_metatheory/README.md#manifesto) -->
 	<!-- * [Closure](0/induction_metatheory/README.md#definition-closure) -->
 	<!-- * [Inductively Defined Set](0/induction_metatheory/README.md#definition-ids) -->

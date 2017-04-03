@@ -55,7 +55,10 @@ Now, extend $$\text{Count}$$ to take in any string $$\sigma$$ as input:
 $$
 \text{Count}_\varsigma(\sigma) \equiv \text{Count}_\varsigma(\sigma_1) + ... + \text{Count}_\varsigma(\sigma_{|\sigma|})
 $$
-One should verify with some examples and mini-proofs that this occurrence counting function behaves as expected. For instance, try and show that for any substring $$\sigma'$$ of $$\sigma$$, $$\text{Count}_\varsigma(\sigma') \le \text{Count}_\varsigma(\sigma)$$.
+One should verify with some examples and mini-proofs that this occurrence counting function behaves as expected. For instance, try and show that for any substring $$\sigma'$$ of $$\sigma$$, $$\text{Count}_\varsigma(\sigma') \le \text{Count}_\varsigma(\sigma)$$. In fact, try and prove as rigorously as possible that
+$$
+\text{Count}_\varsigma(\sigma) \equiv \text{number\_of}\{i\in\textbf{N}:\sigma_i\equiv\varsigma\}
+$$
 
 
 &nbsp;

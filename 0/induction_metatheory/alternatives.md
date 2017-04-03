@@ -5,7 +5,7 @@
 {% set clIR = "\\text{cl}(\\mathscr{I},\\mathscr{R})" %}
 {% set IR = "\\mathscr{I},\\mathscr{R}" %}
 
-> Here, I discuss some alternative ways of looking at induction. Depending on the context, these ways may be easier to work with than the basic way given earlier.
+> Here, I discuss an alternative way of looking at induction. Depending on the context, this way may be easier to work with than the basic way given earlier.
 
 
 ## Definition DerPar
@@ -45,8 +45,8 @@ $$(\supseteq)$$ To show the other direction, do induction on the number of steps
 $$
 {{seq('d')}},d_{n+1} \quad\text{where }d_{n+1} \equiv d
 $$
-If $$d$$ is in $${{I}}$$, one is done. Otherwise, there is a rule $$R$$ such that $$R(d_{j_1},...,d_{j_r}, d_{n+1})$$ holds, where each $$j_i < n+1$$ and each $$d_{j_i}$$ occurs in the derivation sequence above. Since each $$j_i < n+1$$, in fact, one has that $$j_i \leq n$$. Thus for each $$d_{j_i}$$, the sequence
+If $$d$$ is in $${{I}}$$, one is done. Otherwise, there is a rule $$R\in{{R}}$$ such that $$R(d_{j_1},...,d_{j_r}, d_{n+1})$$ holds, where each $$j_i < n+1$$ and each $$d_{j_i}$$ occurs in the derivation sequence above. Since each $$j_i < n+1$$, in fact, one has that $$j_i \leq n$$. Thus for each $$d_{j_i}$$, the sequence
 $$
 {{seq('d','{j_i}')}}
 $$
-is a derivation of it in less than or equal to $$n$$ steps. Hence, by the IH, each $$d_{j_i}$$ is in $${{clIR}}$$. But then, as $${{clIR}}$$ must be closed under every rule in $${{R}}$$, it must, in particular, be closed under $$R$$. Hence, $$d_{n+1} \equiv d \in {{clIR}}$$.
+is a derivation of it in less than or equal to $$n$$ steps. Hence, by the IH, each $$d_{j_i}$$ is in $${{clIR}}$$. But then, as $${{clIR}}$$ must be closed under $$R$$, $$d_{n+1} \equiv d \in {{clIR}}$$.

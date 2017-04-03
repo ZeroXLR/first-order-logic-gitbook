@@ -6,14 +6,14 @@
 
 Since induction plays a crucial role in logic, it is worth taking a more precise look at it. Thus, induction is one of the salient parts of the metatheory that I promised to refine and explore further.
 
-One builds a set recursively or inductively out of two ingredients &mdash; a set of initial objects, prototypically denoted by $$\mathscr{I}$$, and a set of rules, prototypically denoted by $$\mathscr{R}$$. A member of $$\mathscr{R}$$ is an $$(n+1)$$-ary relation $$R$$ where $$n$$ is a non-zero natural number. One can visualize this relation as a possibly infinite table:
+One builds a set recursively or inductively out of two ingredients &mdash; a set of initial objects, prototypically denoted by $$\mathscr{I}$$, and a set of rules, prototypically denoted by $$\mathscr{R}$$. A member of $$\mathscr{R}$$ is an $$(n+1)$$-ary relation $$R$$ where $$n$$ is a non-zero natural number. One can visualize it as a possibly infinite table:
 
-| $$\textbf{IN}_1\qquad ... \qquad\textbf{IN}_n$$ | $$\textbf{OUT}$$ |
-|:-----------------------------------------------:|:----------------:|
-| $$a_1\qquad ... \qquad a_n$$                    | $$a_{n+1}$$      |
-|             ...                                 |    ...           |
-| $$b_1\qquad ... \qquad b_n$$                    | $$b_{n+1}$$      |
-|             ...                                 |    ...           |
+|  Input  |            ...            |  Input  |   Output    |
+|:-------:|:-------------------------:|:-------:|:-----------:|
+| $$a_1$$ | $$...\quad a_i \quad...$$ | $$a_n$$ | $$a_{n+1}$$ |
+|   ...   |            ...            |   ...   |    ...      |
+| $$b_1$$ | $$...\quad b_i \quad...$$ | $$b_n$$ | $$b_{n+1}$$ |
+|   ...   |            ...            |   ...   |    ...      |
 
 To express the fact that $${{seq("a")}},a_{n+1}$$ is a row in the table, one uses the notations $$R({{seq("a")}},a_{n+1})$$ and $$({{seq("a")}},a_{n+1}) \in R$$ interchangeably.
 
