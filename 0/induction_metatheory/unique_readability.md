@@ -8,9 +8,9 @@
 
 ## Definition IPA
 
-**Immediate Predecessors and Ambiguity**. Suppose $$x\in{{clIR}}$$ and it is the case that for some $$R\in{{R}}$$ and $${{seq('d','r')}}\in{{clIR}}$$, $$R({{seq('d','r')}},d)$$ holds. Then, $${{seq('d','r')}}$$ are called the **immediate R-predecessors** of $$d$$ or just i.p. for short if $$R$$ is understood.
+**Immediate Predecessors and Ambiguity**. Suppose $$x\in{{clIR}}$$ and it is the case that for some $$R\in{{R}}$$ and $${{seq('d','r')}}\in{{clIR}}$$, $$R({{seq('d','r')}},d)$$ holds. Then, $${{seq('d','r')}}$$ are called the **immediate predecessors of $$d$$ with respect to $$R$$** or just **i.p.** for short if $$R$$ is understood.
 
-A pair $${{IR}}$$ is called **ambiguous** iff there is some $$d\in{{clIR}}$$ that satisfies at least one of the following:
+A pair $${{IR}}$$ is called **ambiguous** iff there is a $$d\in{{clIR}}$$ that satisfies at least one of the following:
 1. it has two distinct _lists_ (i.e. _ordered_ sets/sequences) of immediate $$R$$-predecessors for some $$R\in{{R}}$$
 2. it has both immediate $$R$$-predecessors and immediate $$R'$$-predecessors where $$R$$ and $$R'$$ are not names for the same rule/table
 3. it is a member of $${{I}}$$; yet it has immediate predecessors for some rule

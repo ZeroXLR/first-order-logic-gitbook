@@ -31,7 +31,7 @@ The last symbol may be a source of confusion because one needs an equality symbo
 	* While one cannot demonstrate actual symbols in the general case, one can at least demonstrate actual symbols in a particular case. Thus, for instance, $$0$$ is a constant symbol in the first order theory of natural numbers.
 
 * **Function Symbols**: The stand-in symbols, in this case, have the following form: every pair of natural numbers $$n$$ and $$i$$ gives rise to one such symbol &mdash; $$^nf_i$$. Here, $$n$$ is a stand-in natural to indicate the number of inputs that this function symbol takes. In the metatheory, it is called the **arity** of the function symbol.
-	* As a concrete example, $$S$$ is the successor function symbol in the first order theory of natural numbers. It has arity $$1$$. The notion of arity will become clearer when I define [terms](refined_strings/terms.md) and [formulas](refined_strings/formulas.md).
+	* As a concrete example, $$S$$ is the successor function symbol in the first order theory of natural numbers. It has arity $$1$$. The notion of arity will become clearer when I define [terms](refined_strings/README.md#definition-terms) and [formulas](refined_strings/README.md#definition-wff).
 * **Predicate Symbols**: Analogous to the situation above, every pair of natural numbers $$n$$ and $$i$$ gives rise to a (referential) predicate symbol &mdash; $$^nP_i$$.
 	* Technically, the equality predicate, defined as a logical symbol, is a predicate symbol of arity $$2$$. Thus, a more accurate title for this section would be "Predicate Symbols without Equality".
 
