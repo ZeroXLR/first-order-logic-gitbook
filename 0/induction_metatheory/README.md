@@ -1,5 +1,5 @@
-{% macro seq(x,n="n") %} {{ x }}_1,...,{{ x }}_{{n}} {% endmacro %}
-{% macro seqf(f, x) %} {{ f }}({{ x }}_1),...,{{ f }}({{ x }}_n) {% endmacro %}
+{% macro seq(x,n="n") %} {{ x }}_1,\ldots,{{ x }}_{{n}} {% endmacro %}
+{% macro seqf(f, x) %} {{ f }}({{ x }}_1),\ldots,{{ f }}({{ x }}_n) {% endmacro %}
 
 
 ## Manifesto
@@ -8,12 +8,12 @@ Since induction plays a crucial role in logic, it is worth taking a more precise
 
 One builds a set recursively or inductively out of two ingredients &mdash; a set of initial objects, prototypically denoted by $$\mathscr{I}$$, and a set of rules, prototypically denoted by $$\mathscr{R}$$. A member of $$\mathscr{R}$$ is an $$(n+1)$$-ary relation $$R$$ where $$n$$ is a non-zero natural number. One can visualize it as a possibly infinite table:
 
-|  Input  |            ...            |  Input  |   Output    |
-|:-------:|:-------------------------:|:-------:|:-----------:|
-| $$a_1$$ | $$...\quad a_i \quad...$$ | $$a_n$$ | $$a_{n+1}$$ |
-|   ...   |            ...            |   ...   |    ...      |
-| $$b_1$$ | $$...\quad b_i \quad...$$ | $$b_n$$ | $$b_{n+1}$$ |
-|   ...   |            ...            |   ...   |    ...      |
+|   Input  |           $$\ldots$$          |   Input  |   Output    |
+|:--------:|:-----------------------------:|:--------:|:-----------:|
+|  $$a_1$$ |$$\ldots\quad a_i \quad\ldots$$|  $$a_n$$ | $$a_{n+1}$$ |
+|$$\ldots$$|           $$\ldots$$          |$$\ldots$$| $$\ldots$$  |
+|  $$b_1$$ |$$\ldots\quad b_i \quad\ldots$$|  $$b_n$$ | $$b_{n+1}$$ |
+|$$\ldots$$|           $$\ldots$$          |$$\ldots$$| $$\ldots$$  |
 
 To express the fact that $${{seq("a")}},a_{n+1}$$ is a row in the table, one uses the notations $$R({{seq("a")}},a_{n+1})$$ and $$({{seq("a")}},a_{n+1}) \in R$$ interchangeably.
 

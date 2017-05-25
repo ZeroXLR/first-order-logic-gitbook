@@ -1,5 +1,5 @@
-{% macro seq(x,n="n") %} {{ x }}_1,...,{{ x }}_{{n}} {% endmacro %}
-{% macro seqf(f, x) %} {{ f }}({{ x }}_1),...,{{ f }}({{ x }}_n) {% endmacro %}
+{% macro seq(x,n="n") %} {{ x }}_1,\ldots,{{ x }}_{{n}} {% endmacro %}
+{% macro seqf(f, x) %} {{ f }}({{ x }}_1),\ldots,{{ f }}({{ x }}_n) {% endmacro %}
 {% set I = "\\mathscr{I}" %}
 {% set R = "\\mathscr{R}" %}
 {% set clIR = "\\text{cl}(\\mathscr{I},\\mathscr{R})" %}
@@ -17,13 +17,13 @@ A pair $${{IR}}$$ is called **ambiguous** iff there is a $$d\in{{clIR}}$$ that s
 
 If $${{IR}}$$ is not ambiguous, it is unsurprisingly called **unambiguous**.
 
-**Example**. The pair $${{I}}\equiv\{00,0\}$$ and $${{R}}\equiv\{\text{glue}\}$$, where $$\text{glue}(x,y,z)$$ holds iff $$z \equiv xy$$ ($$xy$$ is just the concatenation of the strings/symbols $$x$$ and $$y$$), is ambiguous. For example, $$0000$$ has three i.p. lists: $$(00,00)$$, $$(0,000)$$ and $$(000,0)$$. Moreover, $$00\in{{I}}$$; yet, it has the i.p. list $$(0,0)$$.
+**Example**. The pair $${{I}}\equiv\{00,0\}$$ and $${{R}}\equiv\{\text{glue}\}$$, where $$\text{glue}(x,y,z)$$ holds iff $$z \equiv xy$$ is ambiguous. For example, $$0000$$ has three i.p. lists: $$(00,00)$$, $$(0,000)$$ and $$(000,0)$$. Moreover, $$00\in{{I}}$$; yet, it has the i.p. list $$(0,0)$$.
 
 Ambiguity is quite inconvenient when defining _functions_ (not relations) inductively on $${{clIR}}$$. For instance, consider the following inductive definition of a supposed "function" $$f$$ on our pair above:
 * If $$x\in{{I}}$$, $$f(x)\equiv\mathbf{T}$$.
 * If $$f(x)\equiv f(y)\equiv\mathbf{T}$$, then $$f(xy)\equiv\mathbf{F}$$; otherwise, $$f(xy)\equiv\mathbf{T}$$.
 
-Ambiguity makes this definition troublesome. For instance, because $$0\in{{I}}$$, by definition $$f(0)\equiv\mathbf{T}$$. So, according to the previous sentence, $$f(00)\equiv\mathbf{F}$$. However, note that $$00\in{{I}}$$ also. So, in fact, $$f(00)\equiv\mathbf{T}$$ also. Thus, $$f$$ is not really a function as claimed, as it outputs two distinct things on the same input.
+Ambiguity makes this definition troublesome. For instance, because $$0\in{{I}}$$, by definition $$f(0)\equiv\mathbf{T}$$. So, according to the previous sentence, $$f(00)\equiv\mathbf{F}$$. However, note that $$00\in{{I}}$$ also. So, in fact, $$f(00)\equiv\mathbf{T}$$ also. Thus, $$f$$ is not a function as claimed, as it has two distinct outputs on the same input.
 
 
 &nbsp;
